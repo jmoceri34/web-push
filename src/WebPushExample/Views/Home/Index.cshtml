@@ -1,0 +1,17 @@
+﻿<div class="row">
+    <div class="col-md-12" style="padding-bottom: 50px;">
+        <button id="register">Click to register for push notifications</button>
+        <input type="hidden" id="publicKey" data-value="@ViewBag.VapidPublicKey" />
+    </div>
+    <div class="col-md-12">
+        <p>Title</p>
+        <input type="text" id="title" value="New notification!" />
+    </div>
+    <div class="col-md-12">
+        <p>Message</p>
+        <input type="text" id="message" value="Click here to dismiss"/>
+    </div>
+    <div class="col-md-12" style="padding-top: 12px;">
+        <button id="send">Send push notification</button>
+    </div>
+</div>
