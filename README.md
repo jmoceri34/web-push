@@ -1,6 +1,6 @@
 # web-push
 
-> Web Push code sample using ASP.NET Web API for browser notification
+> Web Push code sample using ASP.NET Web API for browser notifications
 
 * [Overview](#overview)
 
