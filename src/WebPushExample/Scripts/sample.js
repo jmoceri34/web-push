@@ -4,6 +4,7 @@ var vm = {};
 $('#send').prop('disabled', true);
 $('#title').prop('disabled', true);
 $('#message').prop('disabled', true);
+$('#url').prop('disabled', true);
 
 $('#register').click(function () {
     registerForPushNotifications();
@@ -17,6 +18,7 @@ function sendPushNotification() {
 
     var title = $('#title').val();
     var message = $('#message').val();
+    var url = $('#url').val();
 
     if (!title || !message) {
         return;
@@ -28,6 +30,7 @@ function sendPushNotification() {
         data: {
             Title: title,
             Message: message,
+            Url: url,
             PushEndpoint: vm.pushEndpoint,
             PushP256DH: vm.pushP256DH,
             PushAuth: vm.pushAuth
@@ -103,6 +106,7 @@ function registerForPushNotifications() {
                     $('#send').prop('disabled', false);
                     $('#title').prop('disabled', false);
                     $('#message').prop('disabled', false);
+                    $('#url').prop('disabled', false);
                 });
         });
 
